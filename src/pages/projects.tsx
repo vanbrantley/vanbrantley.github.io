@@ -46,9 +46,9 @@ const projects: ProjectDetails[] = [
 
 const Projects = () => {
     return (
-        <div className="h-screen bg-yellow-600">
+        <div className="h-screen">
 
-            <p>Project page</p>
+            {/* <p>Project page</p> */}
 
             <div className="h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
 
@@ -56,14 +56,12 @@ const Projects = () => {
 
                     return (
 
-                        <div className="flex justify-center items-center">
+                        <div className="flex flex-col justify-center items-center text-center">
                             <Link href={`/projects/${project.path}`}>
-                                {project.name}
-
                                 <img src={`/logos/${project.logo}.png`} height="150" width="150" />
-
+                                <br />
+                                <p>{project.name}</p>
                             </Link>
-
                         </div>
 
                     );
