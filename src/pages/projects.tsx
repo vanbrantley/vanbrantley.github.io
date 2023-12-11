@@ -1,10 +1,5 @@
 import Link from 'next/link';
-
-type ProjectDetails = {
-    name: string,
-    logo: string,
-    path: string
-}
+import { ProjectDetails } from '@/lib/types';
 
 const projects: ProjectDetails[] = [
     {
@@ -23,14 +18,9 @@ const projects: ProjectDetails[] = [
         path: "what-town-am-i-in"
     },
     {
-        name: "NFL",
+        name: "NFL Fantasy Finesser",
         logo: "nfl-logo",
         path: "nfl"
-    },
-    {
-        name: "NHL",
-        logo: "nhl-logo",
-        path: "nhl"
     },
     {
         name: "AUX",
@@ -48,22 +38,19 @@ const Projects = () => {
     return (
         <div className="h-screen">
 
-            {/* <p>Project page</p> */}
-
-            <div className="h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
+            <div className="h-full">
 
                 {projects.map((project, i) => {
 
                     return (
+                        <Link key={i} href={`/project/${project.path}`}>
 
-                        <div className="flex flex-col justify-center items-center text-center">
-                            <Link href={`/projects/${project.path}`}>
-                                <img src={`/logos/${project.logo}.png`} height="150" width="150" />
+                            <div className="flex flex-col justify-center items-center text-center p-24 space-y-12 hover:bg-zinc-900 cursor-pointer">
+                                <img src={`/project-logos/${project.logo}.png`} height="250" width="250" />
                                 <br />
-                                <p>{project.name}</p>
-                            </Link>
-                        </div>
-
+                                <p style={{ fontSize: "36px" }}>{project.name}</p>
+                            </div>
+                        </Link>
                     );
                 })}
 
