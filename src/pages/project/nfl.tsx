@@ -41,8 +41,6 @@ const NFL = () => {
     return (
         <Project name={"NFL Fantasy Finesser"}
             logo={"nfl-logo.png"}
-            desktopImages={nflDesktopImages}
-            mobileImages={[]}
             githubPath={"nfl"}
             url={""}
         >
@@ -53,9 +51,7 @@ const NFL = () => {
             </div>
 
             <div className="space-y-16">
-                <Tools tools={nflTools}>
-                    <div></div>
-                </Tools>
+                <Tools tools={nflTools} />
 
                 <Purpose>
                     <div>

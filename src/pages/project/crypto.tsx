@@ -14,8 +14,6 @@ const Crypto = () => {
     return (
         <Project name={"Crypto"}
             logo={"crypto-logo.png"}
-            desktopImages={[]}
-            mobileImages={[]}
             githubPath={""}
             url={""}
         >
@@ -26,9 +24,7 @@ const Crypto = () => {
             </div>
 
             <div className="space-y-16">
-                <Tools tools={cryptoTools}>
-                    <div></div>
-                </Tools>
+                <Tools tools={cryptoTools} />
 
                 <Purpose>
                     <div>

@@ -15,8 +15,6 @@ const Aux = () => {
 
         <Project name={"AUX"}
             logo={"aux-logo.png"}
-            desktopImages={[]}
-            mobileImages={[]}
             githubPath={""}
             url={""}
         >
@@ -27,9 +25,7 @@ const Aux = () => {
             </div>
 
             <div className="space-y-16">
-                <Tools tools={auxTools}>
-                    <div></div>
-                </Tools>
+                <Tools tools={auxTools} />
 
                 <Purpose>
                     <div>

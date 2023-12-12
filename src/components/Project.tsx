@@ -6,8 +6,6 @@ interface IProjectProps {
     children: ReactNode,
     name: string,
     logo: string,
-    desktopImages: string[],
-    mobileImages: string[],
     githubPath: string,
     url: string,
 }
@@ -15,7 +13,7 @@ interface IProjectProps {
 const Project = (props: IProjectProps) => {
 
     return (
-        <div>
+        <div className="flex flex-col h-full w-screen">
 
             <Head>
                 <title>{props.name}</title>
@@ -34,18 +32,6 @@ const Project = (props: IProjectProps) => {
                     </a>
                 </div>
             </div>
-
-            {/* {props.desktopImages.length != 0 && (
-                <div className="flex items-center justify-center">
-                    <ImageCarousel images={props.desktopImages} />
-                </div>
-            )}
-
-            {props.mobileImages.length != 0 && (
-                <div className="flex items-center justify-center">
-                    <ImageCarousel images={props.mobileImages} />
-                </div>
-            )} */}
 
             <main>{props.children}</main>
         </div>

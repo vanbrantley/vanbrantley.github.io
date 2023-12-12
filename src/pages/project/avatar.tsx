@@ -1,5 +1,6 @@
 import Project from "../../components/Project";
 import { Tool } from "@/lib/types";
+import ImageCarousel from '../../components/ImageCarousel';
 import Tools from "@/components/Tools";
 import Purpose from "../../components/Purpose";
 import Highlights from "@/components/Highlights";
@@ -50,8 +51,6 @@ const Avatar = () => {
     return (
         <Project name={"Avatar"}
             logo={"avatar-logo.png"}
-            desktopImages={avatarDesktopImages}
-            mobileImages={avatarMobileImages}
             githubPath={"avatar"}
             url={"https://avatar-blond.vercel.app/"}
         >
@@ -62,15 +61,25 @@ const Avatar = () => {
             </div>
 
             <div className="space-y-16">
-                <Tools tools={avatarTools}>
-                    <div></div>
-                </Tools>
+                <Tools tools={avatarTools} />
 
                 <Purpose>
                     <div>
                         <p>The purpose of </p>
                     </div>
                 </Purpose>
+
+                {avatarDesktopImages.length != 0 && (
+                    <div className="flex items-center justify-center">
+                        <ImageCarousel images={avatarDesktopImages} />
+                    </div>
+                )}
+
+                {avatarMobileImages.length != 0 && (
+                    <div className="flex items-center justify-center">
+                        <ImageCarousel images={avatarMobileImages} />
+                    </div>
+                )}
 
                 <Highlights>
                     <div></div>

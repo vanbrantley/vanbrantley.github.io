@@ -46,8 +46,6 @@ const Keyboard = () => {
     return (
         <Project name={"Keyboard"}
             logo={"keyboard-logo.png"}
-            desktopImages={keyboardDesktopImages}
-            mobileImages={keyboardMobileImages}
             githubPath={"keyboard"}
             url={"https://keyboard-ivory.vercel.app/"}
         >
@@ -58,9 +56,7 @@ const Keyboard = () => {
             </div>
 
             <div className="space-y-16">
-                <Tools tools={keyboardTools}>
-                    <div></div>
-                </Tools>
+                <Tools tools={keyboardTools} />
 
                 <Purpose>
                     <div>

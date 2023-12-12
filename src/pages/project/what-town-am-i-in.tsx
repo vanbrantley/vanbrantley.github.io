@@ -37,8 +37,6 @@ const Town = () => {
     return (
         <Project name={"What Town Am I In?"}
             logo={"town-logo.png"}
-            desktopImages={[]}
-            mobileImages={townMobileImages}
             githubPath={"what-town-am-i-in"}
             url={""}
         >
@@ -49,9 +47,7 @@ const Town = () => {
             </div>
 
             <div className="space-y-16">
-                <Tools tools={townTools}>
-                    <div></div>
-                </Tools>
+                <Tools tools={townTools} />
 
                 <Purpose>
                     <div>

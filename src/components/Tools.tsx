@@ -2,7 +2,6 @@ import { Tool } from '@/lib/types';
 import { ReactNode } from 'react';
 
 interface IToolsProps {
-    children: ReactNode,
     tools: Tool[],
 }
 
@@ -12,7 +11,7 @@ const Tools = (props: IToolsProps) => {
         <div className="space-y-4">
             <p style={{ fontSize: "24px" }}>Tools Used</p>
 
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 overflow-auto">
                 {props.tools.map((tool, i) => {
                     const { name, logo } = tool;
 
