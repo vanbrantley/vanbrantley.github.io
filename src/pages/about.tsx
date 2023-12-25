@@ -5,14 +5,18 @@ const About = () => {
         <div className="flex flex-col h-screen w-screen p-16 space-y-12">
 
             {/* Profile Pic */}
-            <div className="flex items-center justify-center h-1/6 space-x-6">
-                <img src="/profile_pic.png" style={{ borderRadius: "50%", height: "100px", width: "100px" }} />
-                <h2 style={{ fontFamily: "Verdana", fontSize: "28px" }}>Van Brantley</h2>
+            <div className="flex flex-col items-center justify-center h-1/6">
+                <div className="flex items-center space-x-6">
+                    <img src="/profile_pic.png" style={{ borderRadius: "50%", height: "100px", width: "100px" }} />
+                    <h2 style={{ fontFamily: "Verdana", fontSize: "28px" }}>Van Brantley</h2>
+                </div>
 
                 <div className="flex items-center">
-                    <a href="https://www.linkedin.com/in/vanbrantley/" target="_blank" rel="noopener noreferrer">
-                        <img src="/linkedin-logo.webp" alt="LinkedIn Logo" style={{ borderRadius: "50%", height: "50px", width: "50px" }} className="cursor-pointer" />
-                    </a>
+                    <div>
+                        <a href="https://www.linkedin.com/in/vanbrantley/" target="_blank" rel="noopener noreferrer">
+                            <img src="/linkedin-logo.webp" alt="LinkedIn Logo" style={{ borderRadius: "50%", height: "50px", width: "50px" }} className="cursor-pointer" />
+                        </a>
+                    </div>
                     <a href="https://github.com/vanbrantley" target="_blank" rel="noopener noreferrer">
                         <img src="/github-logo.png" alt="GitHub Logo" style={{ borderRadius: "50%", height: "30px", width: "30px" }} className="cursor-pointer" />
                     </a>

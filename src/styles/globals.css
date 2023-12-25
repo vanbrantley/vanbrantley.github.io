@@ -26,3 +26,48 @@ body {
 p {
   font-family: "Verdana"
 }
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.image-carousel.mobile {
+  max-width: 300px;
+  height: auto;
+}

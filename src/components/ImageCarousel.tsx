@@ -1,7 +1,9 @@
+import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 import { useState } from "react";
 
 interface IImageCarouselProps {
     images: string[];
+    mobile?: boolean;
 }
 
 const ImageCarousel = (props: IImageCarouselProps) => {
@@ -16,11 +18,21 @@ const ImageCarousel = (props: IImageCarouselProps) => {
         setImageIndex((prevIndex) => (prevIndex - 1 + props.images.length) % props.images.length);
     };
 
+    const imageCarouselClass = `image-carousel${props.mobile ? ' mobile' : ''}`;
+
     return (
-        <div className="flex">
-            <button onClick={goBackward}>←</button>
-            <img src={props.images[imageIndex]} alt={`Image ${imageIndex + 1}`} style={{ maxWidth: "500px", maxHeight: "500px" }} />
-            <button onClick={goForward}>→</button>
+        <div className={imageCarouselClass}>
+            <button className="arrow-button left" onClick={goBackward}>
+                ←
+            </button>
+            <img
+                className="carousel-image"
+                src={props.images[imageIndex]}
+                alt={`Image ${imageIndex + 1}`}
+            />
+            <button className="arrow-button right" onClick={goForward}>
+                →
+            </button>
         </div>
     );
 };

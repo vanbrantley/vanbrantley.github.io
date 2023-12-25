@@ -3,6 +3,16 @@ import { ProjectDetails } from '@/lib/types';
 
 const projects: ProjectDetails[] = [
     {
+        name: "NFL Fantasy Finesser",
+        logo: "nfl-logo",
+        path: "nfl"
+    },
+    {
+        name: "What Town Am I In?",
+        logo: "town-logo",
+        path: "what-town-am-i-in"
+    },
+    {
         name: "Avatar",
         logo: "avatar-logo",
         path: "avatar"
@@ -12,26 +22,16 @@ const projects: ProjectDetails[] = [
         logo: "keyboard-logo",
         path: "keyboard"
     },
-    {
-        name: "What Town Am I In?",
-        logo: "town-logo",
-        path: "what-town-am-i-in"
-    },
-    {
-        name: "NFL Fantasy Finesser",
-        logo: "nfl-logo",
-        path: "nfl"
-    },
-    {
-        name: "AUX",
-        logo: "aux-logo",
-        path: "aux"
-    },
-    {
-        name: "Crypto",
-        logo: "crypto-logo",
-        path: "crypto"
-    }
+    // {
+    //     name: "AUX",
+    //     logo: "aux-logo",
+    //     path: "aux"
+    // },
+    // {
+    //     name: "Crypto",
+    //     logo: "crypto-logo",
+    //     path: "crypto"
+    // }
 ];
 
 const Projects = () => {

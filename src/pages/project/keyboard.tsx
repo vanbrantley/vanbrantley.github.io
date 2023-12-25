@@ -1,11 +1,10 @@
 import Project from "../../components/Project";
 import Tools from "@/components/Tools";
-import Purpose from "../../components/Purpose";
 import Highlights from "@/components/Highlights";
-import Issues from "@/components/Issues";
-import ToDo from "@/components/ToDo";
-import Shortcomings from "@/components/Shortcomings";
+import NextSteps from "@/components/NextSteps";
+import Background from "@/components/Background";
 import { Tool } from "@/lib/types";
+import ImageCarousel from "@/components/ImageCarousel";
 
 const Keyboard = () => {
 
@@ -33,7 +32,8 @@ const Keyboard = () => {
     ];
 
     const keyboardDesktopImages = [
-        "/keyboard-images/Config-Modal.png",
+        "/keyboard-images/Desktop-Blank.png",
+        "/keyboard-images/Desktop-Config.png",
         "/keyboard-images/Desktop-Chords.png",
         "/keyboard-images/Desktop-Notes.png",
     ];
@@ -55,30 +55,58 @@ const Keyboard = () => {
                 <p>Playable web piano designed to help people learn scales and chords</p>
             </div>
 
-            <div className="space-y-16">
+            <div className="space-y-8 pt-8">
                 <Tools tools={keyboardTools} />
 
-                <Purpose>
-                    <div>
-                        <p>The purpose of </p>
+                {keyboardDesktopImages.length != 0 && (
+                    <div className="flex items-center justify-center">
+                        <ImageCarousel images={keyboardDesktopImages} />
                     </div>
-                </Purpose>
+                )}
+
+                {keyboardMobileImages.length != 0 && (
+                    <div className="flex items-center justify-center">
+                        <ImageCarousel images={keyboardMobileImages} mobile={true} />
+                    </div>
+                )}
 
                 <Highlights>
-                    <div></div>
+                    <div>
+                        <ul>
+                            <li>
+                                <p>- Made three different UI layouts for Desktop, Mobile, and Mobile Landscape screens.</p>
+                            </li>
+                            <li>
+                                <p>- Utilized HTML audio tags to play note and chord mp3 files.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </Highlights>
 
-                <Issues>
-                    <div></div>
-                </Issues>
+                <Background>
+                    <div>
+                        <p>After graduating from college, I took up an interest in music production.</p>
+                        <p>One of the first steps for me in exploring this domain was learning basic music theory.</p>
+                        <p>When I found out that scales are made by following a set pattern of steps out from the root note, I pictured an array of notes, and envisioned a process of selecting valid notes while traversing the array.</p>
+                        <p>Soon after this, I learned that chords for a scale are made by stepping through each note in the scale, and pairing it with the two scale notes that are two and four notes away from it respectively in the scale.</p>
+                        <p>These nice systematic formulas that could easily be derived by traversing arrays inspired me to build a tool that given a root note, calculated its scale’s notes and chords.</p>
+                        <p>It was a win-win for me, as I got to practice my web development skills and as a result gained a useful tool which immediately helped me progress in my music production journey. </p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </Background>
 
-                <ToDo>
-                    <div></div>
-                </ToDo>
-
-                <Shortcomings>
-                    <div></div>
-                </Shortcomings>
+                <NextSteps>
+                    <div>
+                        <p>- Add a Progression Mode which allows users to build note and chord progressions within a scale.</p>
+                        <p>- Add notes and chords for additional scales other than just major and minor, like Pentonic scales and Dorian Mode scale.</p>
+                        <p>- Add additional octaves - one above and one below.</p>
+                    </div>
+                </NextSteps>
             </div>
 
         </Project>

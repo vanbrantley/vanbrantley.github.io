@@ -1,10 +1,7 @@
 import Project from "../../components/Project";
 import Tools from "@/components/Tools";
-import Purpose from "../../components/Purpose";
 import Highlights from "@/components/Highlights";
-import Issues from "@/components/Issues";
-import ToDo from "@/components/ToDo";
-import Shortcomings from "@/components/Shortcomings";
+import NextSteps from "@/components/NextSteps";
 import { Tool } from "@/lib/types";
 
 const Crypto = () => {
@@ -23,30 +20,16 @@ const Crypto = () => {
                 <p>This is a TBD project that involves blockchain/cryptocurrencies</p>
             </div>
 
-            <div className="space-y-16">
+            <div className="space-y-8 pt-8">
                 <Tools tools={cryptoTools} />
-
-                <Purpose>
-                    <div>
-                        <p>The purpose of </p>
-                    </div>
-                </Purpose>
 
                 <Highlights>
                     <div></div>
                 </Highlights>
 
-                <Issues>
+                <NextSteps>
                     <div></div>
-                </Issues>
-
-                <ToDo>
-                    <div></div>
-                </ToDo>
-
-                <Shortcomings>
-                    <div></div>
-                </Shortcomings>
+                </NextSteps>
             </div>
 
         </Project>

@@ -1,18 +1,18 @@
 import { ReactNode } from 'react';
 
-interface IShortcomingsProps {
+interface IToDoProps {
     children: ReactNode,
 }
 
-const Shortcomings = (props: IShortcomingsProps) => {
+const NextSteps = (props: IToDoProps) => {
 
     return (
         <div className="space-y-4">
-            <p style={{ fontSize: "24px" }}>Shortcomings</p>
+            <p style={{ fontSize: "24px" }}>Next Steps</p>
             <div>{props.children}</div>
         </div>
     );
 
 }
 
-export default Shortcomings;
+export default NextSteps;

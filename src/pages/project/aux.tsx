@@ -1,10 +1,7 @@
 import Project from "../../components/Project";
 import Tools from "@/components/Tools";
-import Purpose from "../../components/Purpose";
 import Highlights from "@/components/Highlights";
-import Issues from "@/components/Issues";
-import ToDo from "@/components/ToDo";
-import Shortcomings from "@/components/Shortcomings";
+import NextSteps from "@/components/NextSteps";
 import { Tool } from "@/lib/types";
 
 const Aux = () => {
@@ -24,30 +21,19 @@ const Aux = () => {
                 <p>AUX is a social music application for Spotify</p>
             </div>
 
-            <div className="space-y-16">
+            <div className="space-y-8 pt-8">
                 <Tools tools={auxTools} />
 
-                <Purpose>
-                    <div>
-                        <p>The purpose of </p>
-                    </div>
-                </Purpose>
-
                 <Highlights>
-                    <div></div>
+                    <div>
+
+                    </div>
                 </Highlights>
 
-                <Issues>
+                <NextSteps>
                     <div></div>
-                </Issues>
+                </NextSteps>
 
-                <ToDo>
-                    <div></div>
-                </ToDo>
-
-                <Shortcomings>
-                    <div></div>
-                </Shortcomings>
             </div>
 
         </Project>
