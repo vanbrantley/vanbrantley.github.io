@@ -7,7 +7,7 @@ const About = () => {
             {/* Profile Pic */}
             <div className="flex flex-col items-center justify-center h-1/6">
                 <div className="flex items-center space-x-6">
-                    <img src="/profile_pic.PNG" style={{ borderRadius: "50%", height: "100px", width: "100px" }} />
+                    <img src="/profile_pic.png" style={{ borderRadius: "50%", height: "100px", width: "100px" }} />
                     <h2 style={{ fontFamily: "Verdana", fontSize: "28px" }}>Van Brantley</h2>
                 </div>
 
