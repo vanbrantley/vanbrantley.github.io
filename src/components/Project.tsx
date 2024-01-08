@@ -24,7 +24,7 @@ const Project = (props: IProjectProps) => {
                     <img src={`/project-logos/${props.logo}`} alt={`${props.name} Logo`} style={{ maxWidth: '200px' }} />
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center space-x-4 space-y-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center space-x-0 sm:space-x-4 space-y-4">
                     <p className="text-center sm:text-left" style={{ fontSize: "28px" }}>{props.name}</p>
                     <a href={`https://github.com/vanbrantley/${props.githubPath}`} target="_blank" rel="noopener noreferrer" className="sm:!mt-0">
                         <img src="/github-logo.png" alt="GitHub Logo" style={{ borderRadius: "50%", height: "30px", width: "30px" }} className="cursor-pointer" />

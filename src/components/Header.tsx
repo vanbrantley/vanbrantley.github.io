@@ -11,8 +11,8 @@ const Header = () => {
                 <nav>
                     <ul className="flex items-center space-x-8">
                         <li>
-                            <Link href="/projects">
-                                <p className={router.pathname === '/projects' ? 'text-white' : 'text-slate-500'}>Projects</p>
+                            <Link href="/">
+                                <p className={(router.pathname === '/projects' || router.pathname === '/') ? 'text-white' : 'text-slate-500'}>Projects</p>
                             </Link>
                         </li>
                         <li>

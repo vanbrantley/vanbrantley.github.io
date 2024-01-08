@@ -70,7 +70,7 @@ const NFL = () => {
                     <div>
                         <ul>
                             <li>
-                                <p>- Collaborated with another developer - I focused on backend development while they developed the frontend.</p>
+                                <p>- Focused on backend development while another developer took charge of the frontend.</p>
                             </li>
                             <li>
                                 <p>- Created a database schema that models the NFL by storing information for players, teams, games, and game logs.</p>
