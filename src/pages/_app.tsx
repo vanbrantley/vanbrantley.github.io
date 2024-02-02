@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Head>
         <title>Van Brantley</title>
+        <link rel="stylesheet" href="https://use.typekit.net/llb6kbs.css"></link>
       </Head>
 
       {/* <Header /> */}
