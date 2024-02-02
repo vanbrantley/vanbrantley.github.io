@@ -12,12 +12,12 @@ const Header = () => {
                     <ul className="flex items-center space-x-8">
                         <li>
                             <Link href="/">
-                                <p className={(router.pathname === '/projects' || router.pathname === '/') ? 'text-white' : 'text-slate-500'}>Projects</p>
+                                <p className={(router.pathname === '/') ? 'text-white' : 'text-slate-500'}>Home</p>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/about">
-                                <p className={router.pathname === '/about' ? 'text-white' : 'text-slate-500'}>About</p>
+                            <Link href="/page2">
+                                <p className={router.pathname === '/page2' ? 'text-white' : 'text-slate-500'}>Page 2</p>
                             </Link>
                         </li>
                     </ul>
