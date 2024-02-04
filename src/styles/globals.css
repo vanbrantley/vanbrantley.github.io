@@ -17,17 +17,18 @@
 }
 
 body {
-  background-color: #71bef5;
+  /* background-color: #71bef5; */
+  background-color: #b5aa8b;
   cursor: url('/icons8-cursor-50.png'), auto;
 }
 
 .shivering {
-  animation: textShadow 3.2s infinite;
+  animation: textShadow 6.4s infinite;
 }
 
 @keyframes textShadow {
   0% {
-    text-shadow: 0 0 10px #7a330c;
+    text-shadow: 0 0 10px #fcba03;
   }
 
   50% {
@@ -35,6 +36,6 @@ body {
   }
 
   100% {
-    text-shadow: 0 0 10px #7a330c;
+    text-shadow: 0 0 10px #fcba03;
   }
 }
